@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #973aa8;
+  --secondary: #973aa81a;
+  --text: #202020;
+  --dimtext: #888888;
+  --bg: #f8f8f8;
+  --whitebg: #ffffff;
+  --stroke: #d9d9d9;
+}
+
+html {
+  font-family: "Satoshi", sans-serif;
+  max-width: 100%;
+}
+
+body {
+  background: var(--bg);
+}
+
+p {
+  color: var(--text);
+  font-weight: 500;
+}
+
+span{
+    color: var(--stroke);
+}
+
+.logo img {
+  width: 30%;
+}
+
+/* form */
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.form-container {
+  background: var(--whitebg);
+  width: 560px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+  outline: 1px solid var(--stroke);
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title,
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  gap: 10px;
+}
+
+.title p {
+  color: var(--dimtext);
+  width: 80%;
+  text-align: center;
+}
+
+.form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputs label {
+  font-weight: 500;
+}
+
+.inputs input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  outline: 1px solid var(--stroke);
+  border-radius: 10px;
+  padding: 0 16px;
+  font-family: satoshi, sans-serif;
+  font-size: 16px;
+}
+
+.cta-button {
+  width: 100%;
+}
+
+.cta-button input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary);
+  color: var(--whitebg);
+  font-family: satoshi, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 40px var(--secondary);
+}
+
+.other-link{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-link a {
+  color: var(--primary);
+}
+
+.input-number{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.input-number input{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    outline: 1px solid var(--stroke);
+    font-size: 20px;
+}
+/* form */
